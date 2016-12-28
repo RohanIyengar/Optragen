@@ -12,8 +12,7 @@
 %
 % @file     ipoptFunction.m
 %
-% @author   Raktim Bhattacharya,    raktim@aero.tamu.edu
-%           Patricio A. Vela,       pvela@gatech.edu [modifications]
+% @author   Patricio A. Vela,       pvela@gatech.edu [modifications]
 %           Nak-seugn P. Hyun,      pathyun@gmail.com [modifications]
 %
 % @note
