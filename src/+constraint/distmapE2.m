@@ -1,7 +1,6 @@
 %================================ distmapE2 ==============================
 %
-% @namespace    constraints
-% @class        distmapE2
+% @class        constraints.distmapE2
 %
 % @brief        Impose constraints in the form of a look-up table
 %
@@ -13,13 +12,14 @@
 % class does just that.
 %
 % Given a distance map specified using a matrix, will impose distance
-% constraints on the trajectory.  The E2 means Eucliadean 2-space (e.g.,
-% Euclidean plane).
+% constraints on the trajectory.  The E2 means Euclidean 2-space (e.g.,
+% Euclidean plane).  The basic case here presumes point-wise implementation
+% of the constraint (equivalent to point mass robot).
 %
 %================================ distmapE2 ==============================
 
 %
-% @name     distmap.m
+% @name     distmapE2.m
 %
 % @author   Patricio A. Vela,       pvela@gatech.edu
 % @date     2016/08/18  [created]
@@ -28,13 +28,13 @@
 %   set indent to 2 spaces.
 %   set tabs to 4 spaces, with alignment and conversion to.
 %
+% @classf constraint
 %================================ distmapE2 ==============================
-classdef distmap < constraint
-
+classdef distmap < constraint.trajectory
 
 properties
   x;            %< Grid along x coordinate.
-  y;            %< GRid along y coordinate.
+  y;            %< Grid along y coordinate.
   M;            %< The actual map itself as a matrix.
 
   Mx;           %< The gradient in x direction of the map.
